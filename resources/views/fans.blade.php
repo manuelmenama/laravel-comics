@@ -2,12 +2,14 @@
 
 @section('content')
     <main>
-        home
+        fans
     </main>
 @endsection
 
+
+
 @section('title')
 
-    Home
+    Fans
 
 @endsection

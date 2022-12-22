@@ -2,12 +2,12 @@
 
 @section('content')
     <main>
-        home
+        characters
     </main>
 @endsection
 
 @section('title')
 
-    Home
+    Characters
 
 @endsection

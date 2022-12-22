@@ -8,11 +8,15 @@
     <!-- Styles -->
     @vite('resources/js/app.js')
 
-    <title>Laravel DC-Comics</title>
+    <title>Laravel DC-Comics | @yield('title')</title>
 </head>
 <body>
 
+    @include('partials.header')
+
     @yield('content')
+
+    @include('partials.footer')
 
 </body>
 </html>
