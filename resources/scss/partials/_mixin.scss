@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+@mixin removeStyle {
+  list-style: none;
+}
+
+@mixin removeADecoration {
+  text-decoration: none;
+  color: $header-txt-color;
+}
+
+@mixin flex ($type: 'only') {
+
+  display: flex;
+
+  @if $type == 'between' {
+    justify-content: space-between;
+  } @else if $type == 'align-center' {
+    align-items: center;
+  } @else if $type == 'center-el' {
+    align-items: center;
+    justify-content: center;
+  } @else if $type == 'start-center' {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+}
+
+@mixin button {
+
+  background-color: $main-color;
+  padding: 5px 10px;
+  display: inline-block;
+  color: $text-color;
+  
+}
