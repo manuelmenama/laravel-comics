@@ -57,3 +57,16 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
+Route::get('/comics-details/{id}', function ($id) {
+
+    $comics = config('db.comics');
+    $comic_get = array_filter($comics, fn($item) => $item['id'] == $id);
+    $comic = $comic_get[array_key_first($comic_get)];
+
+
+
+    dump($comic_get);
+
+    return view('comics_details', compact('comic'));
+})->name('comics_details');
+

@@ -8,16 +8,16 @@
               <p>CURRENT SERIES</p>
             </div>
 
-          </div>
+        </div>
 
-          <div class="container cont">
+        <div class="container cont">
 
             <ul>
 
                 @foreach ($comics as $comic)
 
                     <li>
-                        <a href="#">
+                        <a href="{{ route('comics_details', ['id'=>$comic['id']]) }}">
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                             <p>
                                 {{ $comic['title'] }}
@@ -34,7 +34,7 @@
               class="button-fill a-btn"
               href="#">SHOW MORE</a>
 
-          </div>
+        </div>
     </main>
 @endsection
 

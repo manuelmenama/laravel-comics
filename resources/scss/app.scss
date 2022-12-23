@@ -135,6 +135,35 @@ header{
     }
   }
 
+  .my-detail-bg{
+
+    background-color: white;
+
+    .my-top-bar{
+    background-color: $main-color;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 50%;
+        left: 15%;
+        border: 2px solid white;
+    }
+    }
+
+    .my-comics-detail{
+
+        color: black;
+        padding: 20px 0;
+        h2{
+            margin-bottom: 40px;
+            color: #003f5e;
+        }
+
+    }
+}
+
   .cta-bar{
 
     height: 120px;
