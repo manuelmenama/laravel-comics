@@ -135,6 +135,38 @@ header{
     }
   }
 
+  .cta-bar{
+
+    height: 120px;
+    background-color: $main-color;
+
+    .col{
+      height: 100%;
+    }
+
+    ul{
+      height: 100%;
+      @include flex('between');
+      align-items: center;
+      @include removeStyle();
+      li{
+        @include flex('only');
+        align-items: center;
+      }
+      li a{
+        @include removeADecoration();
+        font-size: 0.8rem;
+        margin-left: 1rem;
+        color: $text-color;
+      }
+    }
+
+    img{
+      width: 45px;
+    }
+
+  }
+
 
   footer{
     background-color: $footer-color;

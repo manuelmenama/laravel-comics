@@ -16,6 +16,8 @@
 
     @yield('content')
 
+    @include('partials.cta')
+
     @include('partials.footer')
 
 </body>
