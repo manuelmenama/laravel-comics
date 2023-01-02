@@ -66,10 +66,12 @@ header{
                 content: '';
                 display: inline-block;
                 width: 100%;
-                border-bottom: 5px solid $main-color;
+                height: 5px;
+                background-color: $main-color;
+                //border-bottom: 5px solid $main-color;
                 position: absolute;
                 left: 0;
-                bottom: 0;
+                bottom: 8px;
                 z-index: 999;
               }
             }
